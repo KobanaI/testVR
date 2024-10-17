@@ -1,3 +1,8 @@
+
 <IfModule mod_mime.c>
   AddEncoding gzip .unityweb
+  AddEncoding gzip .gz
+  AddType application/octet-stream .data.gz
+  AddType application/wasm .wasm.gz
+  AddType application/javascript .js.gz
 </IfModule>
